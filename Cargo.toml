@@ -1,0 +1,16 @@
+[package]
+name = "elliptic_curve"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+crypto-bigint = "0.5.5"
+finite_field = {path = "../finite_field"}
+num = "0.4.1"
+num-bigint = "0.4.4"
+
+[[bin]]
+name = "secp256k1-key-gen"
+path = "bin/secp256k1_key_gen.rs"
